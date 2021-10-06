@@ -917,6 +917,7 @@ clock_getres
 clock_settime
 cmsghdr
 daemon
+devname_r
 difftime
 dirfd
 dl_iterate_phdr

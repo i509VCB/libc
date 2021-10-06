@@ -625,6 +625,7 @@ extern "C" {
     pub fn endgrent();
     pub fn getgrent() -> *mut ::group;
 
+    pub fn devname_r(dev: ::dev_t, mode: ::mode_t, buf: *mut ::c_char, len: ::c_int) -> *mut ::c_char;
     pub fn getprogname() -> *const ::c_char;
     pub fn setprogname(name: *const ::c_char);
     pub fn getloadavg(loadavg: *mut ::c_double, nelem: ::c_int) -> ::c_int;
